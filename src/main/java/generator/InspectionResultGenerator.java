@@ -1,16 +1,15 @@
 package generator;
 
-import bundle.IncidentBundle;
+import bundle.InspectionResultBundle;
 import io.dummymaker.bundle.IBundle;
 import io.dummymaker.generator.simple.IGenerator;
 
-public class IncidentGenerator implements IGenerator<String> {
+public class InspectionResultGenerator implements IGenerator<String> {
 
-    private final IBundle<String> bundle = new IncidentBundle();
+    private final IBundle<String> bundle = new InspectionResultBundle();
 
     @Override
     public String generate() {
-
         return bundle.getRandom();
     }
 }
