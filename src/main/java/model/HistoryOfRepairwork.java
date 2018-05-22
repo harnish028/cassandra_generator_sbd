@@ -8,7 +8,7 @@ import io.dummymaker.annotation.simple.string.GenPhrase;
 
 import java.sql.Timestamp;
 
-public class HistoryOfRepaiwork {
+public class HistoryOfRepairwork {
 
     @GenTramWorkerId(from = 1, to = 1000)
     public int tramId;
@@ -23,7 +23,7 @@ public class HistoryOfRepaiwork {
     public String description;
 
     @GenId
-    public String expenses;
+    public int expenses;
 
     @GenNick
     public String responsible;
